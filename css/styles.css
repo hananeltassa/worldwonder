@@ -6,18 +6,19 @@
 
 body{
   font-family: 'Noto Sans', sans-serif;
+  min-height: 100vh;
+  margin: 0;
 }
   
 img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
  }
   
 a {
   text-decoration: none;
   color: #086972;
-  
 }
   
 button {
@@ -31,32 +32,29 @@ button {
   padding: 0 25px;
   align-items: center;
   position: fixed;
+  display: flex;
+  justify-content: space-between;
 }
   
 .nav-logo{
-  padding: 2px;
-  height: 100%;
-  width: 280px;
+  width: 280px; 
+  height: auto; 
 }
 
 .nav-links {
   gap: 45px;
   font-size: 16px;
   font-weight: bold;
-  justify-content: flex-end;
-  
+  justify-content: flex-end; 
+  display: flex;
 }
 
-.nav-actions {
-  flex-grow: 1;
-  justify-content: end;
-  margin-right: 30px;
-}
 
 .wonders-section {
   text-align: center;
   margin-top: 95px;
   gap: 2px;
+  flex: 1;
 }
 
 .wonders-section h1 {
@@ -89,3 +87,20 @@ button {
   margin-bottom: 10px;
 }
 
+@media (max-width: 1200px) {
+  .wonders-list {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .wonders-list {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .wonders-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,5 +1,6 @@
 .flex {
     display: flex;
+   
 }
 
 .row {
@@ -10,26 +11,6 @@
     flex-direction: column;
 }
   
-.full-width {
-    width: 100%;
-}
-  
-.full-height {
-    height: 100%;
-}
-  
-.wrap {
-flex-wrap: wrap;
-  }
-  
-.rounded {
-    border-radius: 100px;
-}
-  
-.bold {
-    font-weight: bold;
-}
-
 .center {
     align-items: center;
     justify-content: center;
