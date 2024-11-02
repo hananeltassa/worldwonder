@@ -1,7 +1,7 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -56,9 +56,7 @@ button {
 .wonders-section {
   text-align: center;
   margin-top: 95px;
-  height: 85vh;
   gap: 2px;
-  
 }
 
 .wonders-section h1 {
@@ -67,5 +65,27 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: aliceblue;
+}
+.wonders-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 20px; 
+  padding: 20px; 
+  margin: 0 auto;
+  max-width: 1200px; 
+}
+
+.wonder-box {
+  background-color: #DBEAFE; 
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.wonder-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px; 
+  margin-bottom: 10px;
 }
 
