@@ -33,6 +33,7 @@ button {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  
 }
   
 .nav-logo{
@@ -48,18 +49,31 @@ button {
   display: flex;
 }
 
-.wonders-section {
+.parallax {
+  background-image: url("https://static01.nyt.com/images/2017/12/08/travel/360-christ/360-christ-superJumbo.jpg");
+  height: 100vh; 
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
   text-align: center;
-  margin-top: 30px;
-  gap: 2px;
-  flex: 1;
 }
 
-.wonders-section h1 {
-  font-size: 48px;
-  text-transform: uppercase;
+.parallax-title {
+  font-size: 48px; 
+  color: aliceblue; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  z-index: 1; 
+}
+
+.wonders-section {
   text-align: center;
-  color: aliceblue;
+  margin-top: 50px;
+  gap: 2px;
+  flex: 1;
+  z-index: 1;
 }
 
 .wonders-list{
