@@ -16,6 +16,10 @@
     color: #086972;
 }
 
+.wonder-detail-card h1{
+    margin-bottom: 20px;
+}
+
 .image-container {
     display: flex;
     overflow-x: auto; 
