@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 <img src="${imgURL}" alt="${wonder.name}" class="wonder-image"/>
                 <h2>${wonder.name}</h2>
                 <p>${wonder.location}</p>
-                <a href="./wonder.html?id=${wonder.id}" class="wonder-link">Learn More</a>`;
+                <a href="./wonder.html?name=${encodeURIComponent(wonder.name)}" class="wonder-link">Learn More</a>`;
 
                 wondersList.appendChild(wonderBox); 
             });
@@ -25,3 +25,4 @@ document.addEventListener("DOMContentLoaded", function(){
             console.error("Error fetching wonders:", error);
         })
 })
+

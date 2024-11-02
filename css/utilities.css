@@ -31,16 +31,7 @@
     opacity: 0.7;
 }
 
-.text-btn {
-    background-color: transparent;
-    height: 45px;
-    color: #086972;
-    padding: 0 25px;
-    font-weight: bold;
-    transition: all 0.3s;
-}
-
-.text-btn:hover {
-    opacity: 0.7;
+.footer{
+    padding: 20px;
 }
 

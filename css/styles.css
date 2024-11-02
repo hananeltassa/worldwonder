@@ -48,31 +48,15 @@ button {
   display: flex;
 }
 
-.burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  justify-content: space-between;
-  width: 30px; 
-  height: 30ppx; 
-}
-
-.bar {
-  height: 3px; 
-  background-color: #086972;
-  transition: 0.3s;
-}
-
 .wonders-section {
   text-align: center;
-  margin-top: 95px;
+  margin-top: 30px;
   gap: 2px;
   flex: 1;
 }
 
 .wonders-section h1 {
   font-size: 48px;
-  margin-bottom: 30px;
   text-transform: uppercase;
   text-align: center;
   color: aliceblue;
@@ -127,12 +111,9 @@ button {
     display: flex;
   }
 
-  .burger {
-    display: flex; 
-  }
   .wonders-section h1 {
     font-size: 36px; 
-    margin: 50px 0px; 
+    margin-top: 100px; 
 }
 }
 
