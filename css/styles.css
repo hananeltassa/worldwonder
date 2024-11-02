@@ -85,6 +85,26 @@ button {
   margin-bottom: 10px;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #086972;
+  font-weight: bolder;
+  padding: 20px;
+  border-radius: 60%;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #065f5a;
+}
+
+
+
+
 @media (max-width: 1200px) {
   .wonders-list {
     grid-template-columns: repeat(3, 1fr); 

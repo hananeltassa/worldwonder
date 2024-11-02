@@ -26,3 +26,18 @@ document.addEventListener("DOMContentLoaded", function(){
         })
 })
 
+const backTopBtn= document.getElementById("back-to-top");
+
+window.onscroll = function (){
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 ){
+        backTopBtn.style.display = "block";
+    }
+    else{
+        backTopBtn.style.display = "none";
+    }
+}
+
+backTopBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+

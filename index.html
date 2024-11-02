@@ -19,7 +19,9 @@
         </div>
 
         <div class="flex nav-links ">
+            <div><a href="#home">Home</a></div>
             <div><a href="#wonders">Wonders</a></div>
+            <div><a href="#footer" class="filled-btn">Contact Us</a></div>
         </div>
 
       </nav>
@@ -28,12 +30,24 @@
             <h1> Wonders of the World</h1>
             <div id="wonders-list" class="wonders-list"></div>
         </section>
+        
     </main>
-    <footer class="footer flex column center white-bg primary-txt">
+    <footer id="footer" class="footer flex column center white-bg primary-txt">
+       
+        <div class="contact-info">
+            <p>Email us at: <a href="mailto:info@worldwonders.com">info@worldwonders.com</a></p>
+            <p>Call us: +1 (555) 123-4567</p>
+        </div>
         <p>&copy; 2024 World Wonders. All rights reserved.</p>
     </footer>
-    
-    <script src="./js/wonders.js"></script> 
 
+    <button id="back-to-top" class="back-to-top ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <script src="./js/wonders.js"></script> 
 </body>
 </html>

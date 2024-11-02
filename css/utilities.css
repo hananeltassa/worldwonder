@@ -17,21 +17,38 @@
 }
 
 /* Buttons */
-.filled-btn {
-    background-color: #086972;
-    color: white;
+.filled-btn, .text-btn {
     height: 45px;
-    padding: 10px 25px;
-    border-radius: 100px;
-    font-weight: bold;
-    transition: all 0.3s;
+    padding: 10px 25px; 
+    border-radius: 100px; 
+    font-weight: bold; 
+    transition: all 0.3s; 
+    display: inline-flex; 
+    align-items: center;
 }
-  
+
+.filled-btn {
+    background-color: #086972; 
+    color: white; 
+}
+
 .filled-btn:hover {
-    opacity: 0.7;
+    opacity: 0.7; 
 }
+
+.text-btn {
+    background-color: transparent; 
+    color: #086972; 
+    border: 1px solid #086972;
+}
+
+.text-btn:hover {
+    background-color: #086972; 
+    color: white;
+    opacity: 0.9;
+}
+
 
 .footer{
-    padding: 20px;
+    padding: 30px;
 }
-

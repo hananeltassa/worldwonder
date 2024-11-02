@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const wonderDetailContainer = document.getElementById("wonder-detail");
+    const imageContainer = document.getElementById("image-container");
     
     const urlParams = new URLSearchParams(window.location.search);
     const wonderName = urlParams.get('name');
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("wonder-description").innerText = wonder.summary;
             document.getElementById("wonder-build-year").innerText = wonder.build_year; 
             document.getElementById("wonder-time-period").innerText = wonder.time_period; 
+            document.getElementById("google-maps-link").href = wonder.links.google_maps; 
 
         })
         .catch(error => {

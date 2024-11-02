@@ -1,6 +1,9 @@
 .wonder-detail-container {
     padding: 40px 20px; 
     text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
 }
 
 .wonder-detail-card {
@@ -12,18 +15,27 @@
     border: 1px solid white; 
     color: #086972;
 }
-.wonder-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; 
-    margin: 20px 0px; 
+
+.image-container {
+    display: flex;
+    overflow-x: auto; 
+    padding: 10px;
 }
+
+.image-container img {
+    width: 200px; 
+    height: auto; 
+    margin-right: 10px; 
+    border-radius: 8px; 
+    flex-shrink: 0; 
+}
+
 strong {
     color: #086972; 
 }
 
 .wonder-detail-card p {
-    margin: 10px 0; 
+    margin: 20px 0; 
     color: #333; 
     line-height: 1.6; 
 }
